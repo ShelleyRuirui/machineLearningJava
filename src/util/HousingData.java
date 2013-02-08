@@ -1,7 +1,10 @@
 package util;
 
 public class HousingData {
+	
+	private double[] data;
 
+	//Describe the meaning of each field in the array
 	private double CRIM;              // per capita crime rate by town
 	private double ZN;                  // proportion of residential land zoned for lots over 25,000 sq.ft.
 	private double INDUS;			// proportion of non-retail business acres per town
@@ -15,90 +18,17 @@ public class HousingData {
 	private double PTRATIO;		//pupil-teacher ratio by town
 	private double B;						//1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
 	private double LSTAT;			//% lower status of the population
-	private double MEDV;			//Median value of owner-occupied homes in $1000's
-	public double getCRIM() {
-		return CRIM;
+	private double MEDV;			//Median value of owner-occupied homes in $1000's		
+	
+	public HousingData(double[] data) {
+		this.data = data;
 	}
-	public void setCRIM(double cRIM) {
-		CRIM = cRIM;
+	
+	public double[] getData() {
+		return data;
 	}
-	public double getZN() {
-		return ZN;
-	}
-	public void setZN(double zN) {
-		ZN = zN;
-	}
-	public double getINDUS() {
-		return INDUS;
-	}
-	public void setINDUS(double iNDUS) {
-		INDUS = iNDUS;
-	}
-	public double getCHAS() {
-		return CHAS;
-	}
-	public void setCHAS(double cHAS) {
-		CHAS = cHAS;
-	}
-	public double getNOX() {
-		return NOX;
-	}
-	public void setNOX(double nOX) {
-		NOX = nOX;
-	}
-	public double getRM() {
-		return RM;
-	}
-	public void setRM(double rM) {
-		RM = rM;
-	}
-	public double getAGE() {
-		return AGE;
-	}
-	public void setAGE(double aGE) {
-		AGE = aGE;
-	}
-	public double getDIS() {
-		return DIS;
-	}
-	public void setDIS(double dIS) {
-		DIS = dIS;
-	}
-	public double getRAD() {
-		return RAD;
-	}
-	public void setRAD(double rAD) {
-		RAD = rAD;
-	}
-	public double getTAX() {
-		return TAX;
-	}
-	public void setTAX(double tAX) {
-		TAX = tAX;
-	}
-	public double getPTRATIO() {
-		return PTRATIO;
-	}
-	public void setPTRATIO(double pTRATIO) {
-		PTRATIO = pTRATIO;
-	}
-	public double getB() {
-		return B;
-	}
-	public void setB(double b) {
-		B = b;
-	}
-	public double getLSTAT() {
-		return LSTAT;
-	}
-	public void setLSTAT(double lSTAT) {
-		LSTAT = lSTAT;
-	}
-	public double getMEDV() {
-		return MEDV;
-	}
-	public void setMEDV(double mEDV) {
-		MEDV = mEDV;
+	public void setData(double[] data) {
+		this.data = data;
 	}
 
 }
